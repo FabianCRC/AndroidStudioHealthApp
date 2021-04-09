@@ -5,6 +5,10 @@
     <string name="tvClave">Contraseña</string>
     <string name="btLogin">Iniciar Sesión</string>
     <string name="btCreate">Registrarse</string>
+    <string name="btCalcularIMC">Calcular IMC</string>
+    <string name="tvPeso">Peso(Kg)</string>
+    <string name="tvAltura">Altura(cm)</string>
+    <string name="tvIMC">Su IMC es de:</string>
 
     <string name="btCerrarSesion">Cerrar Sesión</string>
     <string name="title_activity_principal">Principal</string>
@@ -16,7 +20,7 @@
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
+    <string name="menu_gallery">IMC</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="menu_cerrarsesion">Cerrar Sesión</string>
     <!-- TODO: Remove or change this placeholder text -->
