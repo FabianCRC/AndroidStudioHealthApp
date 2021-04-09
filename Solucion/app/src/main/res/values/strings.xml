@@ -3,12 +3,20 @@
 
     <string name="tvUser">Correo electronico</string>
     <string name="tvClave">Contraseña</string>
+    <string name="tvAltura">Altura(cm)</string>
+    <string name="tvIMC">Su IMC es de:</string>
+    <string name="tvGrasaCorporal">% Grasa Corporal</string>
+    <string name="tvPeso">Peso(Kg)</string>
+    <string name="tvFecha">Fecha</string>
+    <string name="tvDescripcion">Descripcion del Ejercicio</string>
+    <string name="tvMinutos">Minutos</string>
+
+
+
     <string name="btLogin">Iniciar Sesión</string>
     <string name="btCreate">Registrarse</string>
     <string name="btCalcularIMC">Calcular IMC</string>
-    <string name="tvPeso">Peso(Kg)</string>
-    <string name="tvAltura">Altura(cm)</string>
-    <string name="tvIMC">Su IMC es de:</string>
+    <string name="btGuardarRegistro">Guardar Registro</string>
 
     <string name="btCerrarSesion">Cerrar Sesión</string>
     <string name="title_activity_principal">Principal</string>
@@ -23,6 +31,7 @@
     <string name="menu_gallery">IMC</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="menu_cerrarsesion">Cerrar Sesión</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="menu_registro">Registrar Ejercicio</string>
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -5,7 +5,7 @@ import java.util.Date;
 public class Registro {
 
 private int id;
-private Date fecha;
+private String fecha;
 private int minutos;
 private String descripcion;
 private double peso;
@@ -13,7 +13,7 @@ private double imc;
 private double grasacorporal;
 
 
-    public Registro(int id, Date fecha, int minutos, String descripcion, double peso, double imc, double grasacorporal) {
+    public Registro(int id, String fecha, String descripcion, int minutos, double peso, double imc, double grasacorporal) {
         this.id = id;
         this.fecha = fecha;
         this.minutos = minutos;
@@ -31,11 +31,11 @@ private double grasacorporal;
         this.id = id;
     }
 
-    public Date getFecha() {
+    public String getFecha() {
         return fecha;
     }
 
-    public void setFecha(Date fecha) {
+    public void setFecha(String fecha) {
         this.fecha = fecha;
     }
 

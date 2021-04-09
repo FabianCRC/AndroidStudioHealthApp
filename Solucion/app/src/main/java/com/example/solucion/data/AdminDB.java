@@ -13,7 +13,7 @@ public class AdminDB extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("create table registros (id int primary key, fecha date," +
+        db.execSQL("create table registros (id int primary key AUTOINCREMENT, fecha Text," +
                 "minutos int," +
                 "decripcion int," +
                 "peso DECIMAL(5,2)," +
@@ -23,7 +23,7 @@ public class AdminDB extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL("create table registros (id int primary key, fecha date," +
+        db.execSQL("create table registros (id int primary key AUTOINCREMENT, fecha Text," +
                 "minutos int," +
                 "decripcion text," +
                 "peso DECIMAL(5,2)," +
