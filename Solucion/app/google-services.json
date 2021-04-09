@@ -1,0 +1,185 @@
+{
+  "project_info": {
+    "project_number": "740971229391",
+    "firebase_url": "https://tareasfide-823d5-default-rtdb.firebaseio.com",
+    "project_id": "tareasfide-823d5",
+    "storage_bucket": "tareasfide-823d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:740971229391:android:9145fce9f980f23e3207ba",
+        "android_client_info": {
+          "package_name": "com.example.appexamenb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "740971229391-r8tuco158j8ermdjf7sdceitpgetvis9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMVf79j3e8t7IMB_UeNvBBRh8iHFuqDCE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "740971229391-r8tuco158j8ermdjf7sdceitpgetvis9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:740971229391:android:e6bb00ae826b51443207ba",
+        "android_client_info": {
+          "package_name": "com.example.practica"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "740971229391-r8tuco158j8ermdjf7sdceitpgetvis9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMVf79j3e8t7IMB_UeNvBBRh8iHFuqDCE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "740971229391-r8tuco158j8ermdjf7sdceitpgetvis9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:740971229391:android:75f5f088fa37da433207ba",
+        "android_client_info": {
+          "package_name": "com.example.practicaexamen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "740971229391-r8tuco158j8ermdjf7sdceitpgetvis9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMVf79j3e8t7IMB_UeNvBBRh8iHFuqDCE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "740971229391-r8tuco158j8ermdjf7sdceitpgetvis9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:740971229391:android:9bb87eaa6e8f23563207ba",
+        "android_client_info": {
+          "package_name": "com.example.solucion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "740971229391-r8tuco158j8ermdjf7sdceitpgetvis9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMVf79j3e8t7IMB_UeNvBBRh8iHFuqDCE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "740971229391-r8tuco158j8ermdjf7sdceitpgetvis9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:740971229391:android:a8392d2102cd3bab3207ba",
+        "android_client_info": {
+          "package_name": "com.example.taller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "740971229391-r8tuco158j8ermdjf7sdceitpgetvis9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMVf79j3e8t7IMB_UeNvBBRh8iHFuqDCE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "740971229391-r8tuco158j8ermdjf7sdceitpgetvis9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:740971229391:android:ca952add9647845c3207ba",
+        "android_client_info": {
+          "package_name": "com.example.tarea2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "740971229391-r8tuco158j8ermdjf7sdceitpgetvis9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMVf79j3e8t7IMB_UeNvBBRh8iHFuqDCE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "740971229391-r8tuco158j8ermdjf7sdceitpgetvis9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
