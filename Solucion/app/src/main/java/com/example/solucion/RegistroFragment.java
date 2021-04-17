@@ -40,9 +40,6 @@ public class RegistroFragment extends Fragment {
 
         btGuardar=root.findViewById(R.id.btGuardarRegistro);
 
-        AdminDB data = new AdminDB(getContext(),"base.db",null,1);
-        RegistroGestion.init(data);
-
         btGuardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -83,5 +80,20 @@ public class RegistroFragment extends Fragment {
             Toast.makeText(getContext(), "Hubo un error al hacer el registro", Toast.LENGTH_SHORT).show();
         }
     }
+    private void update() {
+        if (RegistroGestion.Update(getRegistro())) {
+            Toast.makeText(getContext(), "Se ha hecho la actualizacion correctamente", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(getContext(), "Hubo un error al hacer la actualizacion", Toast.LENGTH_SHORT).show();
+        }
+    }
+    private void delete() {
+        if (RegistroGestion.Delete(getRegistro().getId())) {
+            Toast.makeText(getContext(), "Se ha la eliminación correctamente", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(getContext(), "Hubo un error al hacer la eliminación", Toast.LENGTH_SHORT).show();
+        }
+    }
+
 
 }

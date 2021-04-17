@@ -21,6 +21,10 @@
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_registro" />
         <item
+            android:id="@+id/nav_registros"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_registros" />
+        <item
             android:id="@+id/nav_logout"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_cerrarsesion" />

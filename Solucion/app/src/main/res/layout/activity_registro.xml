@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".RegistroFragment">
+    tools:context=".registro.RegistroActivity">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView20"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/tvFecha"
@@ -15,16 +16,15 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
     <EditText
-        android:id="@+id/etFechaRegistro"
+        android:id="@+id/etFechaRegistroActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="date"
-        android:textAlignment="center"
-        tools:text="02/02/2021" />
+        android:textAlignment="center" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/textView21"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/tvDescripcion"
@@ -32,16 +32,15 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
     <EditText
-        android:id="@+id/etDescripcionRegistro"
+        android:id="@+id/etDescripcionRegistroActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Descripcion"
         android:textAlignment="center" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/textView22"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/tvMinutos"
@@ -49,16 +48,15 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
     <EditText
-        android:id="@+id/etMinutosRegistro"
+        android:id="@+id/etMinutosRegistroActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
-        android:textAlignment="center"
-        tools:text="60" />
+        android:textAlignment="center" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/textView23"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/tvPeso"
@@ -66,16 +64,15 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
     <EditText
-        android:id="@+id/etPesoRegistro"
+        android:id="@+id/etPesoRegistroActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="numberDecimal"
-        android:textAlignment="center"
-        tools:text="80" />
+        android:textAlignment="center" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/textView24"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/tvIMC"
@@ -83,16 +80,15 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
     <EditText
-        android:id="@+id/etIMCRegistro"
+        android:id="@+id/etIMCRegistroActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="numberDecimal"
-        android:textAlignment="center"
-        tools:text="20" />
+        android:textAlignment="center" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/textView25"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/tvGrasaCorporal"
@@ -100,17 +96,28 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
     <EditText
-        android:id="@+id/etGrasaRegistro"
+        android:id="@+id/etGrasaRegistroActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="numberDecimal"
-        android:textAlignment="center"
-        tools:text="20" />
+        android:textAlignment="center" />
 
-    <Button
-        android:id="@+id/btGuardarRegistro"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btGuardarRegistro" />
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btModificarRegistro"
+            android:layout_width="209dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btModificarRegistro" />
+
+        <Button
+            android:id="@+id/btEliminarRegistro"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btEliminarRegistro" />
+    </LinearLayout>
 </LinearLayout>

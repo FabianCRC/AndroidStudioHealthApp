@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void updateUI(FirebaseUser user) {
-        if (user!=null) {  // todo bien se puede pasar a la pagina principal
+        if (user!=null) {
             Intent intent = new Intent(this,Principal.class);
 
             startActivity(intent);

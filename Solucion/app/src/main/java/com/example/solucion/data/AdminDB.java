@@ -13,21 +13,27 @@ public class AdminDB extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("create table registros (id int primary key AUTOINCREMENT, fecha Text," +
+        db.execSQL("create table registros (id INTEGER primary key AUTOINCREMENT, fecha Text," +
                 "minutos int," +
-                "decripcion int," +
+                "descripcion text," +
                 "peso DECIMAL(5,2)," +
                 "imc DECIMAL(4,2)," +
                 "grasacorporal decimal) ");
+        db.execSQL("insert into registros values (0,'20/02/2021',18,'Descripcion',25,25,25)");
+        db.execSQL("insert into registros values (1,'20/02/2021',20,'Descripcion',25,25,25)");
+        db.execSQL("insert into registros values (2,'20/02/2021',25,'Descripcion',25,25,25)");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL("create table registros (id int primary key AUTOINCREMENT, fecha Text," +
+        db.execSQL("create table registros (id INTEGER primary key AUTOINCREMENT, fecha Text," +
                 "minutos int," +
-                "decripcion text," +
+                "descripcion text," +
                 "peso DECIMAL(5,2)," +
                 "imc DECIMAL(4,2)," +
                 "grasacorporal decimal) ");
+        db.execSQL("insert into registros values (0,'20/02/2021',18,'Descripcion',25,25,25)");
+        db.execSQL("insert into registros values (1,'20/02/2021',20,'Descripcion',25,25,25)");
+        db.execSQL("insert into registros values (2,'20/02/2021',25,'Descripcion',25,25,25)");
     }
 }
