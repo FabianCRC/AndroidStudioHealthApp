@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Paginas">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btInformacionAlimentacion"
+            android:layout_width="220dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#839192"
+            android:text="@string/btVer"
+            app:layout_constraintStart_toStartOf="@+id/textView30"
+            app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/tvVerInformacionRecetas"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="@+id/textView29"
+            app:layout_constraintTop_toBottomOf="@+id/btInformacionEjercicios" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/tvVerInformacionEjercicios"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="@+id/textView30"
+            app:layout_constraintTop_toBottomOf="@+id/btInformacionAlimentacion" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/tvVerInformacionAlimentacion"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <Button
+            android:id="@+id/btInformacionEjercicios"
+            android:layout_width="220dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#839192"
+            android:text="@string/btVer"
+            app:layout_constraintStart_toStartOf="@+id/btInformacionAlimentacion"
+            app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+        <Button
+            android:id="@+id/btInformacionRecetas"
+            android:layout_width="220dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#839192"
+            android:text="@string/btVer"
+            app:layout_constraintStart_toStartOf="@+id/btInformacionEjercicios"
+            app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="337dp"
+            android:layout_height="83dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="16dp"
+            android:text="A continuación te adjuntamos enlaces a paginas externas que te recomendamos y te pueden interesar."
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

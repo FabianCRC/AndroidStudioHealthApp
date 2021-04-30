@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.solucion.data.AdminDB;
 import com.example.solucion.gestion.RegistroGestion;
@@ -24,6 +26,7 @@ public class Principal extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private FirebaseAuth mAuth;
+    TextView tvCorreo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,21 +34,14 @@ public class Principal extends AppCompatActivity {
         setContentView(R.layout.activity_principal);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        FloatingActionButton fab = findViewById(R.id.fab);
-        mAuth= FirebaseAuth.getInstance();
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+         mAuth= FirebaseAuth.getInstance();
+
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,R.id.nav_logout,R.id.nav_registro,R.id.nav_registros)
+                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,R.id.nav_logout,R.id.nav_registro,R.id.nav_registros,R.id.nav_paginas,R.id.nav_documentos)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
@@ -71,7 +67,7 @@ public class Principal extends AppCompatActivity {
                 || super.onSupportNavigateUp();
     }
 
-    public void logout() {
+    private void logout() {
         mAuth.getInstance().signOut();
         startActivity(new Intent(Principal.this, MainActivity.class));
         finish();

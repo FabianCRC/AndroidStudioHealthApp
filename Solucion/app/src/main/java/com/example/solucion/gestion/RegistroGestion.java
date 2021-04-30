@@ -32,6 +32,7 @@ public class RegistroGestion {
             info.put("peso", registro.getPeso());
             info.put("imc", registro.getImc());
             info.put("grasacorporal", registro.getGrasacorporal());
+            info.put("minutos", registro.getMinutos());
             conexion = data.getWritableDatabase();
             reg = conexion.insert("registros", null, info);
             conexion.close();
@@ -95,11 +96,16 @@ public class RegistroGestion {
 
         Cursor datos = conexion.rawQuery("select * from registros", null);
 
-
-        lista.add(new Registro(1,"2/2/2021","correr",10,10,10,10));
-        lista.add(new Registro(2,"2/2/2021","correr",10,10,10,10));
-        lista.add(new Registro(3,"2/2/2021","correr",10,10,10,10));
-        lista.add(new Registro(4,"2/2/2021","correr",10,10,10,10));
+        while (datos.moveToNext()) {
+            lista.add(new Registro(datos.getInt(0),
+                    datos.getString(1),
+                    datos.getString(3),
+                    datos.getInt(2),
+                    datos.getDouble(4),
+                    datos.getDouble(5),
+                    datos.getDouble(6)
+                    ));
+        }
         conexion.close();
         return lista;
     }

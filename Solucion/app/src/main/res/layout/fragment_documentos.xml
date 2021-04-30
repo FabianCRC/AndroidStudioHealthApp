@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".documentos.DocumentosFragment">
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="match_parent"
+        android:layout_height="121dp"
+        android:text="En este seccion puedes almacenar documentos en formato pdf que necesites respaldar"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvDocumentos"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <EditText
+        android:id="@+id/etArchivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btBuscar"
+            android:layout_width="220dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="92dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:backgroundTint="#839192"
+            android:text="@string/btBuscarDocumentos"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btCargar"
+            android:layout_width="220dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:backgroundTint="#839192"
+            android:text="@string/btSubirDocumentos"
+            app:layout_constraintStart_toStartOf="@+id/btBuscar"
+            app:layout_constraintTop_toBottomOf="@+id/btBuscar" />
+
+        <Button
+            android:id="@+id/btDescarga"
+            android:layout_width="220dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:backgroundTint="#839192"
+            android:text="@string/btDescargarrDocumentos"
+            app:layout_constraintStart_toStartOf="@+id/btCargar"
+            app:layout_constraintTop_toBottomOf="@+id/btCargar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

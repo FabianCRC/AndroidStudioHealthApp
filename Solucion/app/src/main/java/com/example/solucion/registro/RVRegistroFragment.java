@@ -47,10 +47,11 @@ public class RVRegistroFragment extends Fragment {
                 int posicion=recyclerView.getChildAdapterPosition(v);
                 Registro registro = listaFinal.get(posicion);
                 Toast.makeText(getContext(),
-                        "Es "+registro.getDescripcion(), Toast.LENGTH_SHORT).show();
+                        "Registro de "+registro.getFecha(), Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent(getContext(),RegistroActivity.class);
 
+                intent.putExtra("tipo",1);
                 intent.putExtra("registro",registro);
                 startActivity(intent);
             }

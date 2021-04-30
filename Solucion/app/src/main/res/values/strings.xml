@@ -11,7 +11,14 @@
     <string name="tvDescripcion">Descripcion del Ejercicio</string>
     <string name="tvMinutos">Minutos</string>
     <string name="tvID">ID</string>
-
+    <string name="tvEdad">Edad</string>
+    <string name="tvSuIMC">IMC</string>
+    <string name="tvDocumentos">Nombre del Documento</string>
+    <string name="tvSexo">Sexo</string>
+    <string name="tvNombreApp">Aplicacion deportiva</string>
+    <string name="tvVerInformacionAlimentacion">Informacion sobre alimentacion</string>
+    <string name="tvVerInformacionEjercicios">Informacion sobre ejercicios</string>
+    <string name="tvVerInformacionRecetas">Informacion sobre recetas</string>
 
     <string name="btLogin">Iniciar Sesión</string>
     <string name="btCreate">Registrarse</string>
@@ -20,23 +27,28 @@
     <string name="btCrearRegistro">Guardar Registro</string>
     <string name="btModificarRegistro">Modificar</string>
     <string name="btEliminarRegistro">Eliminar</string>
-
+    <string name="btGrasaCorporal">Calcular Grasa Corporal</string>
+    <string name="btVer">Ver</string>
+    <string name="btSubirDocumentos">Subir Documento</string>
+    <string name="btDescargarrDocumentos">Descargar Documento</string>
+    <string name="btBuscarDocumentos">Buscar Documento</string>
     <string name="btCerrarSesion">Cerrar Sesión</string>
+
     <string name="title_activity_principal">Principal</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">WorkApp</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
+    <string name="menu_home">Inicio</string>
     <string name="menu_gallery">IMC</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_slideshow">Grasa Corporal</string>
     <string name="menu_registro">Registrar Ejercicio</string>
     <string name="menu_registros">Registros</string>
     <string name="menu_cerrarsesion">Cerrar Sesión</string>
-
+    <string name="menu_paginas">Paginas recomendadas</string>
+    <string name="menu_documentos">Documentos</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

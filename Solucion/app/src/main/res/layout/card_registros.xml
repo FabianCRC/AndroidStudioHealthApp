@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="150dp"
-    app:cardBackgroundColor="@color/purple_500"
+    android:layout_height="180dp"
+    app:cardBackgroundColor="#839192"
     app:cardCornerRadius="12dp"
     app:cardElevation="12dp">
 
@@ -19,6 +19,8 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:text="@string/tvID"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,6 +30,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:text="@string/tvFecha"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="@+id/textView12"
             app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
@@ -37,6 +41,8 @@
             android:layout_height="43dp"
             android:layout_marginTop="12dp"
             android:text="@string/tvDescripcion"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="@+id/textView13"
             app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
@@ -45,6 +51,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/tvPeso"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="@+id/textView17"
             app:layout_constraintTop_toTopOf="@+id/tvFecha_Card" />
 
@@ -52,18 +60,22 @@
             android:id="@+id/textView16"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:text="@string/tvIMC"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="@+id/textView15"
             app:layout_constraintTop_toTopOf="@+id/tvDescripcion_Card" />
 
         <TextView
-            android:id="@+id/textView18"
+            android:id="@+id/tvIMC_Card"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/tvGrasaCorporal"
-            app:layout_constraintStart_toStartOf="@+id/textView16"
-            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+            android:text="TextView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/tvPeso_Card"
+            app:layout_constraintTop_toTopOf="@+id/textView16" />
 
         <TextView
             android:id="@+id/textView17"
@@ -71,6 +83,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="84dp"
             android:text="@string/tvMinutos"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/white"
             app:layout_constraintStart_toEndOf="@+id/tvID_Card"
             app:layout_constraintTop_toTopOf="@+id/tvID_Card" />
 
@@ -80,6 +94,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="80dp"
             android:text="TextView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/white"
             app:layout_constraintStart_toEndOf="@+id/textView12"
             app:layout_constraintTop_toTopOf="@+id/textView12" />
 
@@ -88,30 +104,40 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="@+id/tvID_Card"
             app:layout_constraintTop_toTopOf="@+id/textView13" />
-
-        <TextView
-            android:id="@+id/tvIMC_Card"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            app:layout_constraintStart_toStartOf="@+id/tvPeso_Card"
-            app:layout_constraintTop_toTopOf="@+id/textView16" />
 
         <TextView
             android:id="@+id/tvGrasaCorporal_Card"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:text="TextView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="@+id/tvIMC_Card"
             app:layout_constraintTop_toTopOf="@+id/textView18" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/tvGrasaCorporal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/textView16"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
         <TextView
             android:id="@+id/tvPeso_Card"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="@+id/tvMinutos_Card"
             app:layout_constraintTop_toTopOf="@+id/textView15" />
 
@@ -121,14 +147,18 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="56dp"
             android:text="TextView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/white"
             app:layout_constraintStart_toEndOf="@+id/textView17"
             app:layout_constraintTop_toTopOf="@+id/textView17" />
 
         <TextView
             android:id="@+id/tvDescripcion_Card"
-            android:layout_width="79dp"
-            android:layout_height="44dp"
+            android:layout_width="80dp"
+            android:layout_height="74dp"
             android:text="TextView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/white"
             app:layout_constraintStart_toStartOf="@+id/tvFecha_Card"
             app:layout_constraintTop_toTopOf="@+id/textView14" />
     </androidx.constraintlayout.widget.ConstraintLayout>

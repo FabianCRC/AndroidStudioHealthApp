@@ -76,6 +76,7 @@ public class RegistroFragment extends Fragment {
     private void insert() {
         if (RegistroGestion.insert(getRegistro())) {
             Toast.makeText(getContext(), "Se ha hecho el registro correctamente", Toast.LENGTH_SHORT).show();
+            limpiarCampos();
         } else {
             Toast.makeText(getContext(), "Hubo un error al hacer el registro", Toast.LENGTH_SHORT).show();
         }

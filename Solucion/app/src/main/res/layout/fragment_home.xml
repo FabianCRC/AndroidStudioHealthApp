@@ -7,16 +7,26 @@
     tools:context=".ui.home.HomeFragment">
 
     <TextView
-        android:id="@+id/text_home"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:id="@+id/textView31"
+        android:layout_width="286dp"
+        android:layout_height="599dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="244dp"
+        android:text="Esta aplicación esta orientada en brindar funcionalidades importantes a la hora de realizar deportes, tiene la funcionalidad de guardar registros de ejercicios ademas de herramientas para calcular valores importantes para mediciones corporales."
         android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="108dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="76dp"
+        android:src="@android:drawable/ic_dialog_info"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

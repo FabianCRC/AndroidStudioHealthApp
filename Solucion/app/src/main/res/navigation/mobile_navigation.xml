@@ -33,6 +33,16 @@
         android:label="@string/menu_registros"
         tools:layout="@layout/fragment_r_v_registro" />
     <fragment
+        android:id="@+id/nav_documentos"
+        android:name="com.example.solucion.documentos.DocumentosFragment"
+        android:label="@string/menu_paginas"
+        tools:layout="@layout/fragment_documentos" />
+    <fragment
+        android:id="@+id/nav_paginas"
+        android:name="com.example.solucion.Paginas"
+        android:label="@string/menu_paginas"
+        tools:layout="@layout/fragment_paginas" />
+    <fragment
         android:id="@+id/nav_logout"
         android:name="com.example.solucion.ui.logout.LogoutFragment"
         android:label="@string/menu_cerrarsesion"

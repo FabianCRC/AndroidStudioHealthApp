@@ -54,10 +54,20 @@
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
-    <Button
-        android:id="@+id/btCalcularIMC"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btCalcularIMC" />
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btCalcularIMC"
+            android:layout_width="220dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="92dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#839192"
+            android:text="@string/btCalcularIMC"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

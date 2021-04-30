@@ -37,24 +37,32 @@ public class RegistroActivity extends AppCompatActivity {
         etIMC = findViewById(R.id.etIMCRegistroActivity);
         etGrasa = findViewById(R.id.etGrasaRegistroActivity);
 
-        btModificar = findViewById(R.id.btGuardarRegistro);
-        btEliminar = findViewById(R.id.btGuardarRegistro);
+        btModificar = findViewById(R.id.btModificarRegistro);
+        btEliminar = findViewById(R.id.btEliminarRegistro);
 
+        tipo = getIntent().getIntExtra("tipo", 2);
 
-        registro = (Registro) getIntent().getSerializableExtra("registro");
-        etFecha.setText("" + registro.getFecha());
-        etDescripcion.setText("" + registro.getDescripcion());
-        etMinutos.setText("" + registro.getMinutos());
-        etPeso.setText("" + registro.getPeso());
-        etIMC.setText("" + registro.getImc());
-        etGrasa.setText("" + registro.getGrasacorporal());
-
-        btModificar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                procesoModificar();
-            }
-        });
+        if (tipo == 1) {
+            registro = (Registro) getIntent().getSerializableExtra("registro");
+            etFecha.setText("" + registro.getFecha());
+            etDescripcion.setText("" + registro.getDescripcion());
+            etMinutos.setText("" + registro.getMinutos());
+            etPeso.setText("" + registro.getPeso());
+            etIMC.setText("" + registro.getImc());
+            etGrasa.setText("" + registro.getGrasacorporal());
+            btModificar.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    procesoModificar();
+                }
+            });
+            btEliminar.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    procesoEliminar();
+                }
+            });
+        }
 
 
     }
@@ -68,6 +76,8 @@ public class RegistroActivity extends AppCompatActivity {
         double imc = Double.parseDouble(etIMC.getText().toString());
         double grasaCorporal = Double.parseDouble(etGrasa.getText().toString());
         registro = new Registro(id, fecha, descripcion, minutos, peso, imc, grasaCorporal);
+
+
         boolean resultado = (tipo == 1) ? RegistroGestion.Update(registro) : RegistroGestion.insert(registro);
         if (resultado) {
             Toast.makeText(getApplicationContext(), "Actualizando", Toast.LENGTH_SHORT).show();
@@ -77,8 +87,8 @@ public class RegistroActivity extends AppCompatActivity {
         finish();//hace un back
     }
 
-    private void procesoEliminar(){
-        int id=registro.getId();
+    private void procesoEliminar() {
+        int id = registro.getId();
         if (RegistroGestion.Delete(id)) {
             Toast.makeText(this, "Eliminado", Toast.LENGTH_SHORT).show();
         } else {
